@@ -46,7 +46,9 @@ echo '{
             },
             "streamSettings": {
                 "network": "ws",
-                "security": "none"
+                "security": "none",
+                "wsSettings": {
+                    "path": "/'$id'-vless"
             }
         },
         {
