@@ -19,11 +19,11 @@ echo '{
                         "dest": 3001
                     },
                     {
-                        "path": "/trojan",
+                        "path": "/'$id'-trojan",
                         "dest": 3002
                     },
                     {
-                        "path": "/vmess",
+                        "path": "/'$id'-vmess",
                         "dest": 3003
                     }
                 ]
@@ -46,9 +46,9 @@ echo '{
             },
             "streamSettings": {
                 "network": "ws",
-                "security": "none",
                 "wsSettings": {
                     "path": "/'$id'-vless"
+                }
             }
         },
         {
@@ -66,7 +66,7 @@ echo '{
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                    "path": "/trojan"
+                    "path": "/'$id'-trojan"
                 }
             }
         },
@@ -85,7 +85,7 @@ echo '{
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                    "path": "/vmess"
+                    "path": "/'$id'-vmess"
                 }
             }
         }
